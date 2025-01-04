@@ -1,0 +1,31 @@
+{
+  "cwd": "/Users/annaakopyan/Documents/github/FApp",
+  "type": [
+    "cordova"
+  ],
+  "name": "Foroom App",
+  "pkg": "ru.foroom.app",
+  "framework": "core",
+  "template": "blank",
+  "bundler": "vite",
+  "cssPreProcessor": "scss",
+  "cordova": {
+    "folder": "cordova",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "plugins": [
+      "cordova-plugin-statusbar",
+      "cordova-plugin-keyboard",
+      "cordova-plugin-splashscreen"
+    ]
+  },
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkMode": false,
+    "iconFonts": true
+  },
+  "customBuild": false
+}

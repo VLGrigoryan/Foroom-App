@@ -1,0 +1,80 @@
+<template>
+  <div class="page" data-name="home">
+    <!-- Top Navbar -->
+    <div class="navbar navbar-large ">
+      <div class="navbar-bg navbar--dark"></div>
+      <div class="navbar-inner sliding">
+        <div class="title"><a href="/" class="logo">
+            <img src="../images/logo_white.svg" alt="Logo" />
+          </a>
+          <div class="navbar-menu">
+            <!-- Navbar items content -->
+          </div>
+        </div>
+        <div class="title-large">
+          <div class="title-large-text"><a href="/" class="logo">
+              <img src="../images/logo_white.svg" alt="Logo" />
+            </a>
+            <div class="navbar-menu">
+              <!-- Navbar items content -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toolbar -->
+    <div class="toolbar toolbar-bottom toolbar-bottom--dark">
+      <div class="toolbar-inner">
+        <a href="#" class="link">Left Link</a>
+        <a href="#" class="link">Right Link</a>
+      </div>
+    </div>
+
+    <!-- Scrollable page content -->
+    <div class="container">
+      <div class="tabs-content">
+
+
+        <div class="page-content  product-tab tab-1 active">
+          <div class="block modus-product-more">
+            <!-- Virtual List for displaying products -->
+            <div class="virtual-list row"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="yith-quick-view-modal" class="yith-quick-view yith-modal">
+      <div class="yith-quick-view-overlay"></div>
+      <div class="yith-wcqv-wrapper">
+        <div class="yith-wcqv-main">
+          <div class="yith-wcqv-head">
+            <a href="#" class="yith-quick-view-close">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div id="yith-quick-view-content" class="yith-quick-view-content woocommerce single-product">
+            <div class="product">
+              <h2 class="product-title"></h2>
+              <div class="product-description">
+                <img src="../images/logo_white.svg" alt="Product Image" class="product-image" />
+                <ul class="product-details"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default () => {
+    return $render;
+  }
+</script>
